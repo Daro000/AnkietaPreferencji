@@ -5,5 +5,18 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AnkietaPreferencji.MainWindow"
         Title="AnkietaPreferencji">
-    Welcome to Avalonia!
+    <StackPanel>
+        <TextBox Width="200" Height="30" Watermark="Podaj swoje imie" 
+                 Margin="10,20,30,40"
+        />
+        
+        <ComboBox Width="200" Margin="10">
+            <ComboBoxItem Content="Programowanie Aplikacji Desktopowych"/>
+            <ComboBoxItem Content="Programowanie Obiektowe"/>
+            <ComboBoxItem Content="Wychowanie fizyczne"/>
+        </ComboBox>
+        
+        <Button>Zatwierdz</Button>
+        
+    </StackPanel>
 </Window>
