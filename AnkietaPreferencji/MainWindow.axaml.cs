@@ -11,8 +11,22 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
         SubmitButton.Click += Submit_button_Click;
+        Zatwierdz.Click += Submit_button_Approved;
     }
 
+    private void Submit_button_Approved(object sender, RoutedEventArgs e)
+    {
+        var selectedCombobox = Przedmiot.SelectedItem as ComboBoxItem;
+
+        if (selectedCombobox == null || string.IsNullOrEmpty(Imie.Text))
+        {
+            ZatwierdzText.Text = "wypelnij dane";
+        }
+        else
+        {
+            ZatwierdzText.Text = "zapisano dane";
+        }
+    }
     private void Submit_button_Click(object sender, RoutedEventArgs e)
     {
         var valueimie = Imie.Text;

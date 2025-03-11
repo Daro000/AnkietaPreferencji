@@ -18,6 +18,7 @@
         
         <Button x:Name="Zatwierdz">Zatwierdz</Button>
         
+        <TextBlock x:Name="ZatwierdzText" Text=""></TextBlock>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
