@@ -6,7 +6,7 @@
         x:Class="AnkietaPreferencji.MainWindow"
         Title="AnkietaPreferencji">
     <StackPanel>
-        <TextBox Width="200" Height="30" Watermark="Podaj swoje imie" 
+        <TextBox x:Name="Imie" Width="200" Height="30" Watermark="Podaj swoje imie" 
                  Margin="10,20,30,40"
         />
         
@@ -46,10 +46,13 @@
             
             <TextBlock Grid.Row="4" Grid.Column="0" Text="Czy Jaroslaw Strzelec jest najlepszym nauczycielem?"></TextBlock>
             <CheckBox x:Name="Tak5" Grid.Row="4" Grid.Column="1" Content="Tak"></CheckBox>
+            
         </Grid>    
         
         
             <Button x:Name="SubmitButton">Podsumowanie</Button>
+        
+            <TextBlock></TextBlock>
             
             
         
