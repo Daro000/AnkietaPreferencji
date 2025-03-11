@@ -10,13 +10,13 @@
                  Margin="10,20,30,40"
         />
         
-        <ComboBox Width="200" Margin="10">
+        <ComboBox x:Name="Przedmiot" Width="200" Margin="10">
             <ComboBoxItem Content="Programowanie Aplikacji Desktopowych"/>
             <ComboBoxItem Content="Programowanie Obiektowe"/>
             <ComboBoxItem Content="Wychowanie fizyczne"/>
         </ComboBox>
         
-        <Button>Zatwierdz</Button>
+        <Button x:Name="Zatwierdz">Zatwierdz</Button>
         
         <Grid>
             <Grid.RowDefinitions>
@@ -29,27 +29,30 @@
             
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             
             <TextBlock Grid.Row="0" Grid.Column="0" Text="Lubisz programowac?"></TextBlock>
-            <CheckBox Grid.Row="0" Grid.Column="1" Content="Tak"></CheckBox>
+            <CheckBox x:Name="Tak1" Grid.Row="0" Grid.Column="1" Content="Tak"></CheckBox>
             
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Czy Adam Roman jest najlepszym nauczycielem?"></TextBlock>
-            <CheckBox Grid.Row="1" Grid.Column="1" Content="Tak"></CheckBox>
+            <CheckBox x:Name="Tak2" Grid.Row="1" Grid.Column="1" Content="Tak"></CheckBox>
             
             <TextBlock Grid.Row="2" Grid.Column="0" Text="Czy Chodzisz do tech nr 9?"></TextBlock>
-            <CheckBox Grid.Row="2" Grid.Column="1" Content="Tak"></CheckBox>
+            <CheckBox x:Name="Tak3" Grid.Row="2" Grid.Column="1" Content="Tak"></CheckBox>
             
             <TextBlock Grid.Row="3" Grid.Column="0" Text="Czy jestes pelnoletni"></TextBlock>
-            <CheckBox Grid.Row="3" Grid.Column="1" Content="Tak"></CheckBox>
+            <CheckBox x:Name="Tak4" Grid.Row="3" Grid.Column="1" Content="Tak"></CheckBox>
             
             <TextBlock Grid.Row="4" Grid.Column="0" Text="Czy Jaroslaw Strzelec jest najlepszym nauczycielem?"></TextBlock>
-            <CheckBox Grid.Row="4" Grid.Column="1" Content="Tak"></CheckBox>
+            <CheckBox x:Name="Tak5" Grid.Row="4" Grid.Column="1" Content="Tak"></CheckBox>
         </Grid>    
         
+        
+            <Button x:Name="SubmitButton">Podsumowanie</Button>
+            
+            
+        
+    
     </StackPanel>
 </Window>
