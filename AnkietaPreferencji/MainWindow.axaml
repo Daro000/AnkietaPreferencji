@@ -52,7 +52,7 @@
         
             <Button x:Name="SubmitButton">Podsumowanie</Button>
         
-            <TextBlock></TextBlock>
+            <TextBlock x:Name="Info" Text="Tu bedzie podsumowanie" Margin="10"></TextBlock>
             
             
         

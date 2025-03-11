@@ -20,7 +20,7 @@ public partial class MainWindow : Window
         var selectedCheckbox = new[] {Tak1,Tak2,Tak3,Tak4,Tak5};
         var count = selectedCheckbox.Count(p => p.IsChecked == true);
         
-        Console.Write();
+        Info.Text = $"Twoje imie: {valueimie}, Przedmiot : {valueprzedmiot}, Odpowiedziales na tak {count} razy";
         
         
     }
