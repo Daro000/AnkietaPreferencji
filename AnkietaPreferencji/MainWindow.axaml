@@ -22,18 +22,33 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             
             <TextBlock Grid.Row="0" Grid.Column="0" Text="Lubisz programowac?"></TextBlock>
+            <CheckBox Grid.Row="0" Grid.Column="1" Content="Tak"></CheckBox>
+            
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Czy Adam Roman jest najlepszym nauczycielem?"></TextBlock>
+            <CheckBox Grid.Row="1" Grid.Column="1" Content="Tak"></CheckBox>
+            
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Czy Chodzisz do tech nr 9?"></TextBlock>
+            <CheckBox Grid.Row="2" Grid.Column="1" Content="Tak"></CheckBox>
+            
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Czy jestes pelnoletni"></TextBlock>
+            <CheckBox Grid.Row="3" Grid.Column="1" Content="Tak"></CheckBox>
+            
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Czy Jaroslaw Strzelec jest najlepszym nauczycielem?"></TextBlock>
+            <CheckBox Grid.Row="4" Grid.Column="1" Content="Tak"></CheckBox>
         </Grid>    
         
     </StackPanel>
