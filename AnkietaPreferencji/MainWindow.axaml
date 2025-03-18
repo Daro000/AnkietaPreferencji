@@ -55,7 +55,6 @@
         
             <TextBlock x:Name="Info" Text="Tu bedzie podsumowanie" Margin="10"></TextBlock>
             
-            
         
     
     </StackPanel>
